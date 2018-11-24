@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddPatientController">
+   <children>
+      <JFXTextField fx:id="txtFirstName" focusColor="#e72747" labelFloat="true" layoutX="93.0" layoutY="93.0" prefHeight="29.0" prefWidth="170.0" promptText="First Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSecondName" focusColor="#e72747" labelFloat="true" layoutX="93.0" layoutY="169.0" prefHeight="29.0" prefWidth="170.0" promptText="Second Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMobile" focusColor="#e72747" labelFloat="true" layoutX="303.0" layoutY="93.0" prefHeight="29.0" prefWidth="170.0" promptText="Mobile">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="#e72747" labelFloat="true" layoutX="303.0" layoutY="169.0" prefHeight="29.0" prefWidth="170.0" promptText="E-mail">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAdd" alignment="CENTER" layoutX="93.0" layoutY="256.0" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #3F51B5;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

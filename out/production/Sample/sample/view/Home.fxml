@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="609.0" prefWidth="1120.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+    <children>
+      <Pane layoutX="-1.0" prefHeight="83.0" prefWidth="1121.0" style="-fx-background-color: #3F51B5;" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" layoutY="-1.0" prefHeight="609.0" prefWidth="108.0" />
+      <JFXHamburger id="hamburger" fx:id="hamburger" layoutX="43.0" layoutY="27.0" prefHeight="20.0" prefWidth="22.0" stylesheets="@mainStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXHamburger>
+      <Label fx:id="addUserWindo" accessibleRole="IMAGE_VIEW" alignment="CENTER" layoutX="225.0" layoutY="155.0" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #fff;" styleClass="label-window" stylesheets="@mainStyle.css">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Add%20User%20Male_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow color="#0d0c0c3e" height="25.0" offsetY="3.0" radius="10.75" width="20.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="updateDeleteWindo" alignment="CENTER" layoutX="404.0" layoutY="155.0" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #fff;" styleClass="label-window" stylesheets="@mainStyle.css">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Add%20Database_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow color="#0d0c0c3e" height="25.0" offsetY="3.0" radius="10.75" width="20.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="quiryWindow" alignment="CENTER" layoutX="583.0" layoutY="155.0" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #fff;" styleClass="label-window" stylesheets="@mainStyle.css">
+         <effect>
+            <DropShadow color="#0d0c0c3e" height="22.5" offsetY="3.0" radius="10.125" width="20.0" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Inquiry_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="762.0" layoutY="154.0" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #fff;" styleClass="label-window" stylesheets="@mainStyle.css">
+         <effect>
+            <DropShadow color="#0d0c0c3e" height="22.5" offsetY="3.0" radius="10.125" width="20.0" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/User%20Groups_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="addPatientWindow" accessibleRole="IMAGE_VIEW" alignment="CENTER" layoutX="226.0" layoutY="333.0"  prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #fff;" styleClass="label-window" stylesheets="@mainStyle.css">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Sick_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow color="#0d0c0c3e" height="25.0" offsetY="3.0" radius="10.75" width="20.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+    </children>
+</AnchorPane>

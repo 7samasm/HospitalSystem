@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="547.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UdUsers">
+   <children>
+      <JFXTextField fx:id="txtId" focusColor="#ec407a" labelFloat="true" layoutX="54.0" layoutY="69.0" onAction="#getRowByClickIdFiald" prefHeight="39.0" prefWidth="105.0" promptText="ID" style="-fx-background-color: #fff;" unFocusColor="#4059a9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUserName" focusColor="#ec407a" labelFloat="true" layoutX="54.0" layoutY="169.0" prefHeight="39.0" prefWidth="188.0" promptText="Username" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" focusColor="#ec407a" labelFloat="true" layoutX="54.0" layoutY="241.0" prefHeight="39.0" prefWidth="188.0" promptText="Password" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cUserType" focusColor="#ec407a" labelFloat="true" layoutX="54.0" layoutY="313.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="188.0" promptText="Type" style="-fx-background-color: #fff;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtFirstName" focusColor="#ec407a" labelFloat="true" layoutX="275.0" layoutY="170.0" promptText="First Name" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSecondName" focusColor="#ec407a" labelFloat="true" layoutX="275.0" layoutY="241.0" promptText="Second Name" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMobile" focusColor="#ec407a" labelFloat="true" layoutX="275.0" layoutY="313.0" promptText="Mobile" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnPrev" buttonType="RAISED" contentDisplay="CENTER" disable="true" layoutX="54.0" layoutY="420.0" onAction="#prevRow" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #fff;" textAlignment="CENTER">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Sort%20Left_24px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnNext" buttonType="RAISED" contentDisplay="CENTER" disable="true" layoutX="435.0" layoutY="420.0" onAction="#nextRow" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Sort%20Right_24px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="275.0" layoutY="69.0" onAction="#update" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #00C853;" text=" ">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Registration_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="390.0" layoutY="69.0" onAction="#delete" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #f44336;" text=" ">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Trash%20Can_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="labelCount" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="20.0" text="0" visible="false" />
+   </children>
+</AnchorPane>
